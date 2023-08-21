@@ -73,17 +73,17 @@ onMounted(() => {
 });
 
 // attached with onEvent function during created
-function themeChanged() {
-  //TWA.showAlert('Theme has changed');
-}
+// function themeChanged() {
+//   //TWA.showAlert('Theme has changed');
+// }
 
 function mainButtonClicked() {
   showQRScanner();
 }
-function openLink() {
-  TWA.openLink(url.value);
-}
-function processQRCode(data) {
+// function openLink() {
+//   TWA.openLink(url.value);
+// }
+function processQRCode(data: any) {
   code.value = data.data;
   // const result = prepareUrl(code.value)
   const result = code.value;
